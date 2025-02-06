@@ -1,0 +1,38 @@
+{
+  "residences": [
+    {
+      "id": "1",
+      "name": "El fel",
+      "address": "Borj Cedria",
+      "image": "../../assets/images/R1.jpg",
+      "status": "Disponible"
+    },
+    {
+      "id": "2",
+      "name": "Narjesse",
+      "address": "Bizerte",
+      "image": "../../assets/images/R1.jpg",
+      "status": "Disponible"
+    },
+    {
+      "id": 1,
+      "name": "sss",
+      "address": "tunis",
+      "image": "C:\\fakepath\\97b76d44-ed59-4ab5-ab08-46fc57fcede4.jpg",
+      "status": "Disponible"
+    },
+    {
+      "id": 2,
+      "name": "sssss",
+      "address": "ssssss",
+      "image": "C:\\fakepath\\R4.jpg",
+      "status": "Vendu"
+    }
+  ],
+  "Appartement": [
+    {
+      "id": "1",
+      "surface": 200
+    }
+  ]
+}

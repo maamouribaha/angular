@@ -1,0 +1,27 @@
+<h1>Sign up</h1>
+
+
+<form [formGroup]="registerForm" (submit)="onSubmit()">
+    <div class="mb-3">
+      <label for="exampleInputUN" class="form-label">UserName</label>
+      <input type="text" class="form-control" id="exampleInputUN" aria-describedby="emailHelp" formControlName="username">
+      <div id="unerror" class="form-text" *ngIf="registerForm.get('username')?.touched && registerForm.get('username')?.invalid">
+        <h3 style="color: red;" *ngIf="registerForm.get('username')?.errors?.['required']">username is required</h3>
+        <h3 style="color: red;" *ngIf="registerForm.get('username')?.errors?.['minlength']">username require at least 3 caracters</h3>
+        <h3 style="color: red;" *ngIf="registerForm.get('username')?.errors?.['maxlength']">username require 15 caracters</h3>
+        <h3 style="color: red;" *ngIf="registerForm.get('username')?.errors?.['pattern']">only lettres</h3>
+
+      </div>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="email">
+        <div id="emailHelp" class="form-text"></div>
+      </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" formControlName="pwd">
+    </div>
+   
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
